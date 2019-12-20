@@ -14,7 +14,8 @@ to obtain frameshift_folder upload sqn file to
 https://www.ncbi.nlm.nih.gov/genomes/frameshifts/frameshifts.cgi, download the results, save them and unzip them. 
 
 
-by Isa
+by Isabel Schober
+https://github.com/isabelschober
 '''
 
 
