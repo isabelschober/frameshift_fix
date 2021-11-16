@@ -60,7 +60,7 @@ def frameshifts(tbl,fs_long):
 		#print line
 		linesplit=line.split("\t")
 		if line=="\n":
-			print "Attention! Empty line in table file!"
+			print("Attention! Empty line in table file!")
 		elif ">" in linesplit[0]: #save header as entry
 			if "CDS" in locals():
 				CDSs.append(CDS)
@@ -88,7 +88,7 @@ def frameshifts(tbl,fs_long):
 				
 			nr1=int(loc1.split("_")[-1])	#the locus_tags as ints
 			nr2=int(loc2.split("_")[-1])
-			print nr1, nr2, loc1, loc2
+			print(str(nr1)+" "+str(nr2)+" "+str(loc1)+" "+str(loc2))
 			if nr1<nr2:	#coordinates for forward strand frameshift
 				c1=str(int(fs_dic[key][1][0].split("...")[0].replace("[",""))+1)
 				c2=str(int(fs_dic[key][1][1].split("...")[1].replace("]",""))+1)
