@@ -1,6 +1,9 @@
 # frameshift_fix
 Fixes pseudogenes/frameshifts detected by NCBI's 'Microbial Genome Submission Check' in feature table files of assembled and annotated genomes.
 
+**Warning:** The tool should only be used on .tbl files in which CDS entries come before the corresponding gene entries. The newest versions of Prokka produce .tbl files with a different order.
+
+
 Frameshifted pseudogenes occur when a SNP introduces a frameshift, which leads to an early stop codon. While we then assume these to be non-functional pseudogenes, in automatic gene prediction and annotation, this often leads to two shorter gene(-fragment)s to be called and annotated with the same function.
 
 The NCBI developed an online tool called **'Microbial Genome Submission Check'**, which finds consecutive genes that should actually be combined as pseudogenes. It can be found at https://www.ncbi.nlm.nih.gov/genomes/frameshifts/frameshifts.cgi.
