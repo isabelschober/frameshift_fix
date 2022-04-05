@@ -5,7 +5,7 @@ import os
 import argparse
 
 '''
-usage: frameshifts.py -t <table.tbl> -f <frameshift_folder>
+usage: frameshift_fix.py -t <table.tbl> -f <frameshift_folder>
 
 
 Correct frameshifts in table.tbl according to 
